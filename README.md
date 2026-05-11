@@ -47,7 +47,20 @@ pip install torchviz
 
 ---
 
-## 2) Project overview
+## 2) What the notebook covers
+
+The notebook walks through:
+
+1. Environment setup and package installation,
+2. Grid environment/wrapper design,
+3. GAT policy/value architecture,
+4. PPO + (augmented) Lagrangian training loop,
+5. Curriculum over different shock regimes,
+6. Evaluation, baselines, ablations, and visual analytics.
+
+---
+
+## 3) Project overview
 
 The project targets **real-time grid control** under operational constraints:
 
@@ -60,26 +73,13 @@ It blends physics-informed graph learning with reinforcement learning to handle 
 
 ---
 
-## 3) Repository structure
+## 4) Repository structure
 
 - `smart_grid_gatpo_lib.py` — reusable library implementation.
 - `Smart_Grid_Agent.ipynb` — full experiment notebook (method + training + evaluation).
 - `env_needed_csv/egypt_power_plants_processed.csv` — plant capacity/source data used by the environment logic.
 - `checkpoints/` — model checkpoints.
 - `output/` — generated plots and result files.
-
----
-
-## 4) What the notebook covers
-
-The notebook walks through:
-
-1. Environment setup and package installation,
-2. Grid environment/wrapper design,
-3. GAT policy/value architecture,
-4. PPO + (augmented) Lagrangian training loop,
-5. Curriculum over different shock regimes,
-6. Evaluation, baselines, ablations, and visual analytics.
 
 ---
 
