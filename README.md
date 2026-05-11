@@ -16,8 +16,12 @@ This repository has two main entry points:
 ### For experienced AI / power-system engineers
 
 - The project implements **GAT-PPO** for constrained OPF-style dispatch on **`l2rpn_wcci_2022`**.
-- It uses a **primal-dual + augmented Lagrangian** reward design with curriculum training and spatial clustering.
-- The library exposes modular components (`YBusBuilder`, `BusClusterer`, `Grid2OpAdapter`, `PandapowerAdapter`, `GATPO`) for training and deployment flows, where `GATPO` is the API class name used in this repository for the GAT-PPO controller.
+- It uses a **primal-dual + augmented Lagrangian** reward design
+  (automatic constraint handling during RL training), with curriculum training
+  and spatial clustering.
+- The library exposes modular components for training and deployment:
+  `YBusBuilder`, `BusClusterer`, `Grid2OpAdapter`, `PandapowerAdapter`, and
+  `GATPO` (the repository API class name for the GAT-PPO controller).
 
 ### Environment and backend used
 
