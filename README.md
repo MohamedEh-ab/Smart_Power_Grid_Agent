@@ -17,13 +17,13 @@ This repository has two main entry points:
 
 - The project implements **GAT-PPO** for constrained OPF-style dispatch on **`l2rpn_wcci_2022`**.
 - It uses a **primal-dual + augmented Lagrangian** reward design with curriculum training and spatial clustering.
-- The library exposes modular components (`YBusBuilder`, `BusClusterer`, `Grid2OpAdapter`, `PandapowerAdapter`, `GATPO`) for training and deployment flows, where `GATPO` is the implementation class for the GAT-PPO method.
+- The library exposes modular components (`YBusBuilder`, `BusClusterer`, `Grid2OpAdapter`, `PandapowerAdapter`, `GATPO`) for training and deployment flows, where `GATPO` is the API class name used in this repository for the GAT-PPO controller.
 
 ### Environment and backend used
 
 - **Primary development/runtime environment**: Google Colab (CPU/GPU runtime), as documented in the notebook.
 - **Grid simulation environment**: **Grid2Op** (`l2rpn_wcci_2022`).
-- **Power-flow backend**: **LightSim2Grid (C++ backend)**.
+- **Power-flow backend**: **LightSim2Grid**.
 
 ### Pip requirements
 
