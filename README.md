@@ -25,6 +25,7 @@ This repository has two main entry points:
 
 ### Environment and backend used
 
+- **Python version**: Python 3.10+ is recommended (Google Colab default runtime is suitable).
 - **Primary development/runtime environment**: Google Colab (CPU/GPU runtime), as documented in the notebook.
 - **Grid simulation environment**: **Grid2Op** (`l2rpn_wcci_2022`).
 - **Power-flow backend**: **LightSim2Grid**.
@@ -36,6 +37,8 @@ Core dependencies used directly in notebook/library:
 ```bash
 pip install lightsim2grid grid2op networkx seaborn numpy pandas torch gymnasium matplotlib plotly scikit-learn
 ```
+
+For strict reproducibility, pin versions in your own environment (for example via a `requirements.txt` file with exact versions).
 
 Optional (for model graph visualization in notebook):
 
